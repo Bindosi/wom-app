@@ -1,0 +1,21 @@
+﻿/*Adapted from the code retrieved on http://jsfiddle.net/6qkdP/2/*/
+.grid {
+    margin: 1em auto;
+    border-collapse: collapse
+}
+
+    .grid td {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ccc;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 13px
+    }
+
+        .grid td.clicked {
+            background-color: red;
+            font-weight: bold;
+            color: red;
+        }
