@@ -13,6 +13,26 @@ function gotodraw() {
 };
 
 function clear() {
+    var grid = clickableGrid(8, 8, function (el, row, col, i) {
+        /*console.log("You clicked on element:", el);
+        console.log("You clicked on row:", row);
+        console.log("You clicked on col:", col);
+        console.log("You clicked on item #:", i);
+        console.log("Item colour:", el.style.backgroundColor);
+        */
+
+        if (el.style.backgroundColor == "transparent") {
+            el.style.backgroundColor = "red";
+        } else if (el.style.backgroundColor == "red") {
+            el.style.backgroundColor = "green";
+        } else if (el.style.backgroundColor == "green") {
+            el.style.backgroundColor = "blue";
+        } else if (el.style.backgroundColor == "blue") {
+            el.style.backgroundColor = "transparent";
+        }
+    });
+
+    document.body.appendChild(grid);
 //TODO
 };
 

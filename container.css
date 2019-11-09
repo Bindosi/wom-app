@@ -1,5 +1,6 @@
 ﻿.btn-group {
-    position: absolute;
+    height: inherit;
+    position: inherit;
     left: 50%;
     top: 50%;
     width: 100%;
