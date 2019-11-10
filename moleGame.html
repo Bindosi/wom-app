@@ -18,6 +18,8 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
 
+  <script src="js/script1.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -25,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Walk Over Me</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Walk Over Me</a>
 
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button">
         <i class="fas fa-2x fa-info-circle"></i>
@@ -41,18 +43,15 @@
       </div>
     </nav>
 
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">OPEN ENDED</h1>
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Whack-a-Mole</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
+      <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
@@ -60,11 +59,34 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">The floor is yours. Go crazy!</p>
+      <table class="table" id="statusTable">
+        <tbody>
+          <tr>
+            <td>Time left:</td>
+            <td><span id="countdownTimer">60</span> s</td>
+        </tr>
+        <tr>
+            <td>Hits:</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Missed:</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="text-center mt-4">
+
+          <button class="btn btn-secondary btn-xl" onclick="gotowam();">
+          <i class="fas fa-play mr-2"></i>
+          RESTART
+        </button>
+      </div>
 
     </div>
-  </header>
+  </section>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -79,6 +101,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+
+  <script>window.onload = countdown();</script>
 
 </body>
 
