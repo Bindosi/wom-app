@@ -18,6 +18,8 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
 
+  <script src="js/script1.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -25,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Walk Over Me</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Walk Over Me</a>
 
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button">
         <i class="fas fa-2x fa-info-circle"></i>
@@ -41,15 +43,12 @@
       </div>
     </nav>
 
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">OPEN ENDED</h1>
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Whack-a-Mole</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -60,11 +59,34 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">The floor is yours. Go crazy!</p>
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">The moles have taken over Grandpa John's beautiful vegetable garden!</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Help Grandpa John to get rid of the moles by stepping on them. You have 30 seconds to catch as many moles as possible by stepping on a tile when it lights up. Be careful not to step on tiles that do not light up. Grandpa John doesn't need you stomping on his vegetables.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">PS! Catching moles is easier with multiple people ;)</p>
+        </div>
+      </div>
+
+      <!-- About Section Button -->
+      <div class="text-center mt-4">
+
+        <p>To start, step on any tile or press "start".</p>
+        <a>
+          <button class="btn btn-xl btn-outline-light" onclick="gotowam();">
+          <i class="fas fa-play mr-2"></i>
+          START
+        </button>
+      </a>
+      </div>
 
     </div>
-  </header>
+  </section>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
